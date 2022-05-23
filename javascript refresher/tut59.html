@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Set JS Dates </title>
+</head>
+<body>
+    <div class="container">
+        Current time is : <span id="time"></span>
+    </div>
+    <script>
+      let now = new Date();
+      console.log(now);
+
+      let dt = new Date(0);
+      console.log(dt);          //this is the reference date
+
+      
+      let d = new Date(1000);
+      console.log(d);           //w.r.t reference date, dates are to be given
+      
+      let newDate = new Date("2029-09-30");
+      console.log(newDate);
+
+    //   let = new Date(year, month, date, hours, minutes, seconds, milliseconds);
+    let dd = new Date(2030, 6, 21, 12, 06, 10);
+    console.log(dd); 
+
+    let datenew = dd.getDate();         //if one want to get date in form of date
+    console.log(datenew);
+
+    let mon = dd.getMonth();            //if one want to get date in form of month
+    console.log(mon);
+
+    let hr = dd.getHours();             //if one want to get date in form of hours
+    console.log(hr);
+
+    dd.setDate(5);                      //if one want to improvise date
+    console.log(dd);
+
+    setInterval(updateTime, 1000);
+    function updateTime(){
+        time.innerHTML = new Date();
+    }
+    </script>
+</body>
+</html>

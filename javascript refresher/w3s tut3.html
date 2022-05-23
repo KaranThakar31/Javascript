@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> W3school Example with changing HTML content </title>
+</head>
+<body>
+    <p id="change"> This is one of the example of W3School </p>
+    <button onclick="toggle()"> Toggle </button>
+    <script>
+        function toggle(){
+            let chan = document.getElementById('change');
+            if (chan = document.getElementById('change').innerHTML != "Greetings from Javascript"){
+                chan = document.getElementById('change').innerHTML = "Greetings from Javascript"
+            }
+            else{
+                chan = document.getElementById('change').innerHTML = "This is one of the example of W3School"
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java script string function </title>
+</head>
+<body>
+    <script>
+        var str = 'this is a new string';
+        console.log(str);
+
+        //First occurence in substring locates
+        var position = str.indexOf('is');
+        console.log(position);
+
+        //last occurence in substring locates
+        position = str.lastIndexOf('is');
+        console.log(position);
+
+        //substring of a string
+        substr = str.slice(0,6);    //here negative value is also possible
+        substr  = str.substring(1,5);   // here, positive value only possible
+        console.log(substr);
+
+        //replace a substring with another substring
+        var replaced = str.replace('string', 'Karan');    // replace a substring with new string
+        console.log(replaced);
+
+        console.log(str.toUpperCase());                 //converts string in upper or lower case as desired
+        console.log(str.toLowerCase());
+
+        var newString = str.concat('karan thakar');         // adds two strings, same as +
+        console.log(newString);
+
+        var strwithwhitespace = "      this is Karan     thakar    "
+        console.log(strwithwhitespace);                         // trims out white spaces at beginning and end of string, 
+        console.log(strwithwhitespace.trim());                  // does not trim out spaces in between as it is considered as part of string
+
+        char2 = str.charAt(3);      //tells character in string by telling number of character
+        console.log(char2);
+        char3 =str.charCodeAt(3);       //tell character by telling number of character
+        console.log(char3);
+
+    </script>
+</body>
+</html>

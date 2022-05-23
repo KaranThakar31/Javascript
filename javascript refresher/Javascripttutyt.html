@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Tutorial From Youtube of Three and Half hour </title>
+</head>
+<body>
+    <p class="heading">This is Javascript Tutorial from Youtube of 3 and HAlf hour long </p>
+    <script>
+        //inline comments 
+
+        /* 
+        */
+
+        // Data types 
+        //undefined, null, Boolean, string, symbol, number, objects
+
+        //variable 
+        //var , let, const
+        
+        //string inside a string 
+        " this a string \"inside a string\" "         //add a backslash then javascript won't consider that start has a end of previous string, it will be considered a simple quotation
+        
+        //Escape characters;
+
+        /*
+        
+        \' single quote
+        \" = double quote
+        \\ = backslash
+        \n = newline
+        \r = carriage return
+        \t = tab
+        \b = backspace 
+        \f = from feed
+        
+        */
+
+        //modify array with bracket 
+        var a = [20, 303,300];
+        a[0] = [200];
+
+        // but this not possible for strings
+
+
+        //find in 3 layer deep array
+        var a = [[1,2,3], [4,5,6], [7,8,9]];
+        a[1][2] = 100;
+        console.log(a);
+        //it will change the element of 1st array and 2nd element, count from 0 index
+        
+
+        //pop function = will remove last element of array
+        var a = [1,2,3]
+        b = a.pop();
+        console.log(a)      //it will pop out last element, and want to watch then console.log(array)
+
+
+        //shift function = will remove first element of array
+        //unshift function = will add element at beginning of array
+
+        //nested array = array of arrays 
+
+        //nested if statement but instead (&&) can be used to describe and operators 
+        //nested if statement but instead (||) can be used to describe and operators 
+        //else if statement is used when more than 2 conditions needs to be checked. For ex. - var < 5, var > 10, and between 5 - 10
+
+        //switch statement    === just go through this example once
+        //to give same answer to some case, don't use break statement and give same answer/return to those case 
+        function caseInSwitch(val){
+            var answer = "";
+            switch(val){
+                case 1 :
+                    answer = "Alpha";
+                    break;
+                case 2 :
+                    answer = "Beta";
+                    break;
+                default :
+                    answer = "Not included"
+                    break;
+            }
+            return answer;
+        }
+        console.log(caseInSwitch(2));
+        console.log(caseInSwitch(2000));
+
+        // //while loops:
+        // var myArray = [];
+        // while(i < 5){
+        //     myArray.pudh(i);
+        //     i++;
+        // }
+        // console.log(myArray);
+
+        //for loop
+        // var ourArray = [];
+        // for (i = 0; i < 5; i++) {
+        //     ourArray.push(i);
+        // }
+
+        //if instead of i++ we use i+=2, then loop of even number will be created.
+        //start with 1 instead of 0, even number series will be created
+
+
+
+        // Edureka Sessions Notes :
+
+        // string  + string = string 
+        // string + number = string 
+        // number + string = string 
+        // number + number = number 
+
+        var array = 10 + 10 + '10';
+        console.log(array);
+        
+        var array = 10 + '10' + 10;
+        console.log(array);
+
+        var array = '10' + 10 + 10;
+        console.log(array);
+
+        var array = 10 + '10' + 10 - 1
+        console.log(array);
+
+        var array = 10 + 10 + '10' - 1  //exception 
+        console.log(array);
+
+        // both the side of operator, pure numeric value, it will work, except + operator 
+
+        // true = 1
+        // false = 0
+        // boolean data type 
+
+        // boolean + num = number
+        // boolean + string = string 
+        
+        var a = 'true';
+        var b = 'hii';
+        console.log(a-b);
+        // string - string = NaN
+
+        // we know that : 
+        // a = '10';
+        // b = '10'
+        // a + b = '1010';
+
+        // we want '10' + '10' = '20';
+        // method 1 =  parseInt(a) + parseInt(b) = we will get sum of those string; //consider only integer
+        // method 2 = parseFloat(a) + parseFloat(b);  //consider decimal also
+
+        var a = '100delhi'
+        var b = '200mumbai'
+        console.log(parseInt(a)+parseInt(b));
+
+
+
+
+      
+
+    </script>
+</body>
+</html>

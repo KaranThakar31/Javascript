@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> w3school and javascript tutorial</title>
+</head>
+<body>
+    <script>
+        // window.print()   -- used in function does printing of page you are currently in.
+        
+        // document.write("<h1>Hello world</h1>");
+
+
+        /* 
+        return -- exit a function
+        try - implements a error handling to block of statement 
+        */
+
+        
+        /* 
+        numbers are not allowed to be 1st character of the name 
+        let 1name = "karan"; ----- this is wrong 
+        while dollar, alphabet, underscore are allowed
+        let _name = "karan"; ---- allowed
+        */
+
+        
+
+        
+        
+        
+        /* we cannot re-declare a variable with let or const
+        we can not reassign variable different value with const
+        */
+
+
+
+
+        /* $ is used for main function in JQuery 
+        _ is used for hidden (private) function 
+        */
+
+        // let is block scope -- x assigned inside {}, can't be used outside it 
+
+
+        
+        
+        
+        /* hoisting is behavior of javascript, where it moves all variables to top of current scope
+
+        name = "karan";
+        var name;          this is right in 'var',  var is declared at top, and initialized at same times 
+
+        but in case of let and const,    this is not true - it si declared but it is not initialized.. but in const it will be syntax error
+        age = 21;                        
+        let age;    results in reference error
+
+        in let, block of code is aware of code, bit variable is in temporal dead zone..., and can only be used after declaration.
+
+        */
+
+
+
+        /* declared and assigned at same tie then it is initialized.
+        in initialization, hoisting doesn't take place
+        */
+
+        /* 
+        
+        == equal to 
+        === equal value and equal type
+        != not equal to
+        > greater than
+        >= greater than and equal to
+        ? ternary operation
+        
+        */
+
+                /* ternary operator --
+                it is variable whose value as to be assigned based on conditions
+                syntax = 
+                */
+            //    let age = prompt('please tell us age');
+            //    let alcohol = (age<18) ? 'too young' : 'old enough';
+            //    console.log(alcohol + 'to drink');
+        
+        
+        /* data type --
+        comparison between strings and number
+        '' empty string = 0
+
+        during comparison string will convert into NaN
+        empty string = 0
+        and answer is given 
+        */
+
+        /* 
+        console.table({objects}) -- very important
+        console.warn('this is a warning'); -- a warning type msg on console
+        console.clear() --- msg shown, console was cleared
+        console.time('identifier')
+        console.timeEnd('any identifier') -- shows the time code took to console
+        console.assert(condition, 'statement')
+        ex. console.assert(566<189, 'age >189 is not possible');
+        */
+
+
+
+        /* 
+
+        && logical and 
+        || logical or 
+        ! logical not
+
+        */
+
+        /* 
+        
+        typeof = return type of operator
+        instanceof = return true if object is an instance of object type
+        
+        */
+        let x = prompt('Please enter your age');
+        if (x>17 && x<32){
+            alert('you are eligible for this job');
+        }
+        else{
+            alert('you are not eligible for this job');
+        }
+        
+        
+        /* 
+        let x = 5;
+        let y = 2;
+        x ** y    &  z = Math.pow(x,y);
+        this both will produce same result.
+        */
+
+        /* 
+        
+        let x = 50 + 100 * 3;
+        here, old school rule, * and / takes precedence 
+        and then +, -
+
+        to show priority, parenthesis are inserted as shown
+        let x = (50 + 100) * 3;
+        now instead of multiplication, addition will take place first.
+
+        */
+
+        // operator 'new' and 'typeof';     practice and example
+        // operators 'in' and 'instanceof';  practice
+        // '<<', '<<<' -- shift left and shift left unsigned
+        // '&' (bitwise and), '^' (bitwise xor), '|' (bitwise or), '??' (nullish coalescing);
+        // 'yield', 
+
+
+        console.log(alert('hello world'));
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays and objects </title>
+</head>
+<body>
+    <div class="contain">
+        Simple html 
+    </div>
+    <script>
+        let var1 = 34;          //simple number type variable
+        let var2 = "Karan";     // string type
+        let var3 = true;        //bollean type
+        let var4 = null;        //null and undefined type
+        let var5 = undefined;
+        console.log(var3);
+
+        let employee = {            //this is known as object
+            name: "karan",
+            salary :10,
+            passion :"anime watching",
+            pursuing : "full stack wd",   //IMP NOTES    when space in name of variable, it can be accessed with nameofobject.nameofkey but only with nameofobject['nameofkey']
+        }
+        console.log(employee);
+
+        let names = new Array(21, 62, "labrodor", undefined, null);            //arrays is only type of object
+        let naming = [23, 48, 'karan', 'piysuh', 'sandwich']
+        console.log(names);                                   //here, same as done before, by giving number of position that element can be known  
+        console.log(naming)
+
+        sortname = names.sort();    //one can sort elements according to ascending order
+        console.log(sortname);
+
+        sortname.push("cats")       //one can add elements in array
+        console.log(sortname);
+
+        let vari = new Array(23);
+        vari.push("this is pushed");
+        console.log(vari);
+
+
+
+    </script>
+</body>
+</html>

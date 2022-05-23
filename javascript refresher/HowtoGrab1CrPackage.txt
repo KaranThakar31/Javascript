@@ -1,0 +1,28 @@
+Steps :::
+    1. CGPA -- >8 is good but if possible try for >9
+
+
+
+    2. CODING ROUND:
+        here, 3 more sub steps = i. Language 
+                                 ii. Data Structures 
+                                 iii. Algorithms
+        i. for language == C++   {bitcoin, microsoft os, apple os, game development} {competitive coding - fast language} as compared to other  {takes edge over java  because of some topics like pointer and stuff}
+                        JAVA  {android development, web applications}
+                        Python {machine learning, AI, web applications}  {not preferred}
+
+        ii. Data Structures and Algorithms:
+                            Pase 1 {placement specific}
+                            Phase 2 {competitive coding for google, uber, directi, code-nation, de shaw, arcesium, tower research capital , sprinklr} - {brand value and package a lot higher tha others}
+    
+
+    3. INTERVIEW QUESTIONS:
+                        i. Main subjects {operating system, dbms, networking, system design}
+                        ii. DSA questions {same as coding round - just verbal or psudo code}
+                        iii. Puzzles -- {c++ placement course}
+                        iv. Projects -- 
+                                {cv/resume projects}
+    
+
+    4. HR ROUND:
+                        

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Loops </title>
+</head>
+<body>
+    <div class="contain"> This is about loop </div>
+    <script>
+        console.log('this is tutorial');
+
+
+
+    //for loop:
+        let i = 0;
+        for (let i=0; i<4; i++) {      
+              console.log(i);          
+             }
+
+        myarray =['dubai', 'mumbai, '['red','yellow', 'green']']
+        for (i=0, i<myarray.length, i++){
+            console.log(myarray[i]);
+        }
+        /* 'dubai'
+        'mumbai'
+        ['red','yellow', 'green']
+        */          // what if we want all these single string value in 1 form= then 
+        
+        
+        //iterating singles string values in nested array, this example is for upto 2 level only. more can be written ...
+        for (i=0, i<myarray, i++){
+            if(Array.isArray(myarray[i])){
+                for(j=0, j<myarray[i],i++){
+                console.log(myarray[i][j])
+            }
+            }else{
+                console.log(myarray[i])
+            }
+        }
+
+
+
+
+        
+
+        // let friends = ["ronak", "dev", "kapu", "het", "devendra"];
+
+
+        // for(let index = 0; i < friends.length; index++){
+        //     console.log("hello friends "+ friends[index]);              
+        // }
+
+        // friends.forEach(function f(element){
+        //     console.log("Hello Friend, using modern Javascript  " + element)        // forEach loop, same goes for syntax remember
+        // });
+
+        for (elements of friends){
+            console.log("hello friends," + element + " from me again");             // for of loop, same that syntax has to be remembered,
+        }                                                                           // for loop is for iteration only.
+
+
+        let employee ={
+            name : "karan",
+            salary : 2000,
+            passion :"full stack wd",
+        }
+        
+        for(key in employee){
+            console.log(`The ${key} of employee is ${employee[key]}`);      //for in loop = to iterate over objects in javascript, it is more suitable for objects, only to print key name of objects.
+        }
+        for (key in enployee){
+            console.log(key);           // this only shows keys console
+        }                               
+        for (key in employee){
+            console.log(movie[key])     // this only shows key values console
+        }
+
+        let k =0;
+        while(k<4){
+            console.log(`${k} is less than 4`);         //while loop -- condition is checked first and then it is loop is iterated
+            k++;
+        } 
+
+        let j =34;
+        do{
+            console.log(`${j} is less than 4 but we are in a do while loop`)            //in do while loop, first it is iterated then it's condition is checked
+            j++;
+        }
+        while(j<4);
+
+
+        let n1 = 'White Rabbit'.indexOf('it', 1);
+        let n2 = 'White Rabbit'.indexOf('it', 3);
+        console.log(n1);
+        console.log(n2);
+        
+
+
+    </script>
+</body>
+</html>

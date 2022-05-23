@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope and conditionals </title>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>item-1</li>
+            <li>item-2</li>
+            <li>item-3</li>
+            <li>item-4</li>
+            <li>item-5</li>
+            <li>item-6</li>
+            <li>item-7</li>
+        </ul>
+    </div>
+    <script>
+        var string1 = "this is a string";
+        var string1 = "this is a string newone";
+        console.log(string1);
+
+        let a ="karan";
+        {                               // "let" it will let you declare element only 1 time, 
+            let a ="karan t"            // while var and others will let you declare element has any time you want
+            console.log(a);       // but expectionaly when one wants to declare 'let' more than one time, it can be by putting it in block has shown
+        }                               
+
+        const z = "this can't be changed";
+        //z = "i want to change this"         //value of constant can't be changed, has the name suggest
+        console.log(z);
+
+
+        let age=5;
+        if(age>18){                                         //never name a variable as a,b,c etc... always very specified name must be there, related to function, ex.= age = 18 etc
+            console.log("you can drink alcohol");           //if-else condition 
+        }
+        else if (age==5){
+            console.log("Age is 5")
+        }
+        else if (age==2){
+            console.log("age is 2");
+        }
+        else{
+            console.log("you can drink cold drink")
+        }
+
+        let cups = 25
+        switch (cups) {
+            case 25:
+                console.log("the value of cups is 25")       //switch case 
+                break;                                 //checks the case, if 4th one is true then next one will not be checked
+            case 24:                                        // break is necessary, because if break is removed it will check all the case ...
+                console.log("the value of cups is 24")
+                break;
+            case 76:
+                console.log("the value of cups is 76")
+                break;
+            default:
+                console.log("the value of cups is non")
+                break;
+        }
+
+        // let dogs = "labrador";
+        // switch (dogs) {
+        //     case "pomarian":
+        //         console.log("the breed name is pomarian")
+        //         break;
+        //     case "german" :
+        //         console.log("the breed name is german")
+        //         break;
+        //     case "pug":
+        //         console.log("the breed name is pug")
+        //         break;
+        //     default:
+        //         console.log("the breed name is non of data")
+        //         break;
+        // }
+
+
+        let rollno = 100;
+        switch (rollno) {
+            case 10:
+                console.log("the roll no is 10")
+                break;
+            case 40:
+                console.log("the roll no is 40")
+                break;
+            case 70:
+                console.log("the roll no is 70")
+                break;
+            case 100:
+                console.log("the roll no is 100")
+            default:
+                console.log('non of given value is true')
+                break;
+        }
+    </script>
+</body>
+</html>

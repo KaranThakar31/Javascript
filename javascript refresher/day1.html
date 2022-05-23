@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Day 1 </title>
+</head>
+<body>
+    <button onclick="alert('i am learning javascript')"> Click Me </button>
+    
+    <script>
+        var firstname = 'karan'
+        var lastname = 'thakar'
+        var country = 'india'
+        var city = 'ahmd'
+        var age = '19'
+        console.log(firstname + ' ' + lastname + ' ' + country + ' ' + city + ' ' + age + ' ' + ' is Married ');
+
+        let info = {
+            firstname : 'rajesh',
+            lastname : 'joshi',
+            country : 'india',
+            city : 'amreli',
+            age : '30',
+            ismarried : true,
+        }
+        console.log(info);
+
+        let objectOrder = {
+            firstname : 'rajesh',
+            lastname : 'joshi',
+        }
+
+        //sort karvanu baki che 
+        info = Object.assign(objectOrder, info);
+        console.log(sort(info));
+    </script>
+    
+
+
+</body>
+</html>

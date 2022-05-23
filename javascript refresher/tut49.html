@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Javascript | Strings and Strings Methods </title>
+
+
+
+
+</head>
+<body>
+    <div class="container">
+        <h1> Lorem Ipsum </h1>
+        <div id="name"></div>
+        <p>
+             Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis accusamus fugit, maxime voluptate amet velit et consectetur temporibus deserunt doloremque?
+        </p>
+    </div>
+    
+    <script>
+        var string= 'this';
+        var name= 'Karan';
+        var message ='I am a decent developer'
+        var temp = `${name} is my name and I think, ${message}`;    //tempelate can be used to describe var inside a variable 
+        //console.log(string + name + message);
+        console.log(temp);
+
+        var len = name.length;
+        console.log(`Length of my name is ${len}`);
+
+        name = 'Karan';
+        age = '20';
+        passion = 'want to be Developer';
+        money = '14k';
+        console.log( 'helo world\tname' ); // \n = new line, \t = some space, \b = symbol 
+
+        //var y = new String("this is");
+        //var x =new String("Name is Karan");
+        //console.log(y);
+        //console.log(x);
+        
+        document.getElementById('name').innerHTML = '<h3> this is an h3 heading </h3>';
+
+        //inside written than it is not applicable
+        document.getElementsByTagName('p').innerHTML = '<h2> this is added text </h2>';
+    
+    </script>
+</body>
+</html>

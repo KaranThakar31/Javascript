@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basics </title>
+</head>
+<body>
+    <div id="writedate"></div>
+    <script>
+        let sdate = document.getElementById('writedate').innerHTML = Date();
+
+        function reply(greet){
+            return greet;
+        }
+        let x = reply('konnchiwa');
+        console.log(x);
+
+
+        function length(string){
+            return string.length;
+        }
+        let len = length('karan')
+        console.log(len);
+
+        function toCase(string){
+            return string.toLowerCase() + '-' + string.toUpperCase();
+        }
+
+        function shortcut(string1, string2){
+            return string1[0] + string2[0];
+        }
+        let d = shortcut('Karan','Devang')
+        console.log(d);
+
+
+
+    
+    /*                                         function to trim and find character at index 0
+         function firstChar(string){
+             let t = string.trim();
+            return t.charAt(0);         here, don't do big bracket, but small bracket
+        }
+        let r = firstChar('   ronak   ');
+        console.log(r);
+    */ 
+
+        // let s = firstChar('   sosuke   ');
+        // console.log(s);
+
+        function indexOfIgnoreCase(string1, string2){
+            let s1L = string1.toLowerCase();
+            let s2L = string2.toLowerCase();
+            let e = s1L.indexOf(s2L);
+            return e;
+        }
+        let z = indexOfIgnoreCase('karan', 'Ran');
+        console.log(z);
+
+
+        let n1 = 'White Rabbit'.indexOf('it', 1);
+        let n2 = 'White Rabbit'.indexOf('it', 3);
+        console.log(n1);
+        console.log(n2);
+    </script>
+</body>
+</html>

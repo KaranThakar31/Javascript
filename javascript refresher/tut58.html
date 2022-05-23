@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS settimeout interval timeout </title>
+</head>
+<body>
+    <div class="container">
+        <span id="time"> Time is now span </span>
+    </div>
+    <script>
+        console.log('this is tutorial 58');
+
+        // settimeout            //allows us to run the function once after the interval of time
+        // cleartimeout            // allows us to run the function repository after interval of time
+
+        function greet(){
+            console.log("Hello good Morning");
+        }
+        greet();
+        
+        timeout = setTimeout(greet, 5000, "karan", "take care");
+        console.log(timeout);
+        // setTimeout(greet(), 12000); --> wrong as it is calling the function inside setTimeout
+        // parenthesis bracket are not needed
+        
+        clearTimeout(timeout);          //to cancel out timeSet before
+
+        intervalId = setInterval(greet, 1000);           //msg given to user on same interval of time
+        clearInterval(intervalId);          ////to cancel out interval timeSet before
+
+        function  displaytime(){
+            time = new Date();
+            console.log(time);
+            document.getElementById('time').innerHTML = time;
+        }
+        setInterval(displaytime, 1000);
+        
+
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Math Model </title>
+</head>
+<body>
+    <div class="container">
+        <h1>This is math object tutorial</h1>
+    </div>
+    <script>
+
+        //printing the math object
+        let m = Math;
+        console.log(m)
+
+        E: 2.718281828459045
+        LN2: 0.6931471805599453
+        LN10: 2.302585092994046
+
+        console.log("the value of Math.E", Math.E)
+        console.log("the value of Math.LN2", Math.LN2)
+        console.log("the value of Math.LN10", Math.LN10)
+
+        //FUNCTIONS 
+        let a =34.64534;
+        let b = 39;
+        console.log("the value of a and b is ", a,b);
+        console.log("the value of a and b rounded is ", Math.round(a), Math.round(b));      //to get round figure, make complete 1 for decimal numbers
+
+        console.log("3 raised to the power of 2 is ", Math.pow(3,2));       //power function
+        console.log("square root of 36 is " + Math.sqrt(36)) ;       //to take square root of number
+        console.log("5.8 rounded up to nearest integer is " + Math.ceil(5.8)) ;       //nearest upside integer in number line
+        console.log("5.8 rounded down to nearest integer is " + Math.floor(5.8));   //nearest downside integer in number line 
+       
+        console.log("absolute value of 5.8 is " + Math.abs(5.8));                  //absolute value of integer
+        console.log("absolute value of -5.8 is " + Math.abs(-5.8));
+
+        console.log("the value of sin(pi) " + Math.sin(Math.PI/2));      //trigonometric value can be found, but not inverse 
+        console.log("the value of tan(pi) " + Math.tan(Math.PI/2));
+        console.log("the value of cos(pi) " + Math.cos(Math.PI/2));
+
+        console.log("the minimum value of 4, 5 and 6 is ", Math.min(4,5,6));    //min and max value of input value
+        console.log("the maximum value of 4, 5 and 6 is ", Math.max(4,5,6));
+
+        let r = Math.random();
+        console.log("the random number is ", r)         //random number generator
+
+        let a1 = 1;
+        let b1 = 100;
+        let r1_100 = a1 + (b1-a1)*Math.random();
+        console.log('The random number between 1-100 is ', r1_100);         //this formula for random number between 2 integer has to be derived amd syntax remains same
+        
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Clock creating using Javascript </title>
+    <style>
+        #btn{
+            width:200px;
+            height:56px;
+            background-color: black;
+            color:azure;
+            border-radius: 8px;
+            cursor:pointer;
+        }
+        #btn:hover{
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+
+    <p id="dat"> </p>
+    <button id="btn" onclick="togglehide()"> Show/Hide </button>
+    
+    <script>
+
+        
+        function togglehide(){
+            var dat = document.getElementById('dat')
+            if (dat.style.display === "none") {
+                dat.style.display = "block";
+            }
+            else{
+                dat.style.display = "none";
+            }
+        }
+
+
+        function time(){
+            var dat = document.getElementById('dat').innerHTML = new Date();
+        }
+        setInterval(time, 1000)
+
+    </script>
+</body>
+</html>

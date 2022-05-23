@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON - data transport </title>
+</head>
+<body>
+    <div class="container">
+        This is my Div
+    </div>
+    <script>
+        let jsonobj = {
+            name : "karan",
+            passion :"anime",
+            pursue : "full stack",
+            food : "fastone",
+        }
+        console.log(jsonobj);
+        let myJsonstr = JSON.stringify(jsonobj);      // converts objects into strings
+        console.log(myJsonstr);
+
+        myJsonstr = myJsonstr.replace("anime", "anime and manga");
+        console.log(myJsonstr);
+
+        newJsonobj = JSON.parse(myJsonstr);
+        console.log(newJsonobj);
+    </script>
+</body>
+</html>

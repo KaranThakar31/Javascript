@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button style="width: 200px; height: 150px; font-size: 40px; background: blue; color: white; border-radius: 8px;"> Click Me </button>
+
+
+    <div> 
+        <h1>how javascript works </h1>
+
+        <p> 
+            engine runs code in browser >>>>  
+            script tag >> fetch code >>> from network{1st time}, cache{2nd and another time, from cache memory}, service worker
+            data in byte >> byte stream decoder >> convert into character >> parse{parse only code used at time } and pre parser{code it parse which is not used at a time}, this is why javascript fast
+            node is made >> tree like structure - abstract syntax tree >> this process interpreter
+            dynamic language -- data type same >> function data type sae as before >> if changed then whole code is again interpreted and then code is run again..
+        </p> 
+    </div>
+
+    <div>
+        <button id='date' style="width: 200px; height: 150px; font-size: 40px; background: blue; color: white; border-radius: 8px;" > click me </button>
+        <span></span>
+    </div>
+
+
+    <div>
+        <button id='sh' style="width: 200px; height: 150px; font-size: 40px; background: blue; color: white; border-radius: 8px;">Show/Hide</button>
+        <h2 id="psh">Java-script hide/show toggle tutorial</h2>
+    </div>
+
+    <script>
+        let btn = document.querySelector('button');     // the element those are related to function and whole event, assign them variable
+        btn.addEventListener('click',inputMsg)          // add event listener with function 
+        function inputMsg() {                           // code the function 
+           let name = prompt('Please your Username.')   // != means not equal to.
+           btn.textContent = name;
+        }
+
+        let date = document.querySelector('#date')
+        date.addEventListener('click', showDate)
+        function showDate(){
+            let span = document.querySelector('span');
+            span.textContent = Date();
+        }
+
+        let showHide = document.querySelector('#sh');
+        let pShowHide = document.querySelector('#psh');
+        showHide.addEventListener('click', toggle)
+        function toggle(){
+            if(pShowHide.style.display !='none'){
+                pShowHide.style.display='none';
+            }
+            else{
+                pShowHide.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>
+
+javascript to start on react_js
+
+extreme basics
+strings
+conditional 
+loops {for m.imp}
+arrow function {lexical this}
+function {arrow function vs function}
+events, handling events
+normal function 
+
+now switched to react js ..... 
+
+spread operator
+destructuring
+named import
+default import 
+how to import javascript object from 1 module to another
+nam tag export
+default export
+with {} import and some without {} imported why? and everything
+asynchronous nature of javascript
+callback system
+promises
+asyn-awaits 
+maps filter reduce
+
+hooks
+components
+basic react app 
+
+socket
